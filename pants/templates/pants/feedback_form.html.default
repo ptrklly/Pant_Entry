@@ -1,0 +1,23 @@
+<html>
+<head>
+
+</head>
+
+<body>
+
+
+<h1>it appears as though it does</h1>
+<form method="POST" action="">
+{% csrf_token %}
+<div id="subject">
+  {{ form.subject }}
+</div>
+<div id="message">
+  {{ form.message }}
+</div>
+
+
+<input type="submit" value="Create New Pant">
+</form>
+
+</body>

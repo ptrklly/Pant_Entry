@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block sidebar %}
+<div id="aboutsidebar" class="sidebar alpha omega grid_2">
+  <ul>
+    <li><h4><a href=".\about.html">About the Company</a></li></h4>
+    <li><h4><a href=".\aboutstaff.html">About the Staff</a></li></h4>
+    <li><h4><a href=".\aboutpress.html">Press</a></li></h4>
+    <li><h4><a href=".\aboutfindus.html">Find Us</a></li></h4>
+    </ul>
+  </div>
+{% endblock sidebar %}
+
+{% block content %}
+<div id="abouts" class="maintext alpha omega grid_9">
+  <h3> About the Company </h3>
+  <p>Clothesliner was started because organic sustainable lomo, +1 irony McSweeney's skateboard Portland PBR tattooed farm-to-table Terry Richardson Williamsburg. Organic farm-to-table wolf, next level shit put a bird on it freegan American Apparel Williamsburg chambray gentrify viral you probably haven't heard of them keffiyeh Cosby sweater. Pitchfork photo booth fuck, DIY cardigan messenger bag butcher Thundercats tofu you probably haven't heard of them whatever squid VHS put a bird on it. Thundercats fixie Williamsburg, photo booth synth vinyl dreamcatcher Wes Anderson cliche. You probably haven't heard of them DIY mlkshk biodiesel McSweeney's raw denim. Skateboard Pitchfork Etsy, photo booth messenger bag artisan raw denim beard Tumblr retro Austin. Wes Anderson sustainable keffiyeh, blog lomo craft beer cliche brunch homo skateboard biodiesel fanny pack Pitchfork you probably haven't heard of them Stumptown. </p>
+ 
+  
+  </div> <!--closes the maintext div-->
+{% endblock content%}

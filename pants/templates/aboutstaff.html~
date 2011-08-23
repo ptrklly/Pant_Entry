@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block sidebar %}
+<div id="aboutsidebar" class="sidebar alpha omega grid_2"> 
+  <ul>
+    <li><h4><a href=".\about.html">About the Company</a></li></h4>
+    <li><h4><a href=".\staff/">About the Staff</a></li></h4>
+    <li><h4><a href=".\aboutpress.html">Press</a></li></h4>
+    <li><h4><a href=".\aboutfindus.html">Find Us</a></li></h4>
+    </ul>
+  </div>
+{% endblock sidebar %}
+
+{% block content %}
+<div id="main" class="alpha omega grid_10"> 
+  <div id="abouts" class="maintext alpha omega grid_9">
+    <h3>About the Staff </h3>
+    <div id="peter" class="bio">
+      <p> Jack Farm-to-table irure vero enim, fanny pack tofu readymade banh mi wayfarers freegan. Tattooed next level skateboard delectus pitchfork, vice wes anderson laboris master cleanse enim officia nesciunt homo anim. Mollit keytar lo-fi keffiyeh, four loko farm-to-table quinoa stumptown do nihil fap ex yr portland. PBR nostrud tumblr retro. Photo booth retro Austin, veniam vinyl ut cliche. Salvia sartorial fixie, ut DIY mollit dolor 3 wolf moon sint placeat odio wolf. Accusamus voluptate +1 readymade farm-to-table.</p>
+      <p>He can be contacted at afasf (at) clothesliner.com</p>
+      </div>
+    <div id="peter" class="bio">
+      <p> Peter next level shit put a bird on it freegan American Apparel Williamsburg chambray gentrify viral you probably haven't heard of them keffiyeh Cosby sweater. Pitchfork photo booth fuck, DIY cardigan messenger bag butcher Thundercats tofu you probably haven't heard of them whatever squid VHS put a bird on it. Thundercats fixie Williamsburg, photo booth synth vinyl dreamcatcher Wes Anderson cliche. You probably haven't heard of them DIY mlkshk biodiesel McSweeney's raw denim. Skateboard Pitchfork Etsy, photo booth messenger bag artisan raw denim beard Tumblr retro Austin. Wes Anderson sustainable keffiyeh, blog lomo craft beer cliche brunch homo skateboard biodiesel fanny pack Pitchfork you probably haven't heard of them Stumptown.</p>
+      <p>He can be contacted at afasf (at) clothesliner.com</p>
+
+      
+      </div> <!--closes the maintext div-->
+
+    </div> <!--closes the main div-->
+{% endblock content %}

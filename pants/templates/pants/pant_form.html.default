@@ -1,0 +1,49 @@
+<html>
+<head>
+<style type="text/css">
+#change {color:green;}
+</style>
+<script type="text/javascript">
+
+var pk = 'http://placekitten.com/g/200/';
+
+function changepic()
+{
+document.getElementById("change").innerHTML= '<div id="change"><p>some text that explains the image</p><img src="'+pk+301+'" /></div>'
+}
+function changepictwo()
+{
+document.getElementById("change").innerHTML= '<div id="change"><p>some different text that explains the image</p><img src="'+pk+302+'" /></div>'
+}
+
+</script>
+</head>
+
+<body>
+<div id="change"><p>some text that explains the image</p><img src="http://placekitten.com/g/200/303" /></div>
+<form method="POST" action="">
+{% csrf_token %}
+<label for="brand" onclick="changepic()">Brand</label>
+<input type="text" title="brand" name="brand" id="brand" onclick="changepic()" cols=5 rows=1></input>
+<label for="type" onclick="changepictwo()">Type</label>
+<textarea title="type" name="type" id="type" onclick="changepictwo()" cols=5 rows=1></textarea>
+
+<label for="waist" onclick="changepic()">Waist</label>
+<textarea title="waist" name="waist" id="waist" onclick="changepic()" cols=5 rows=1></textarea>
+<label for="front_rise" onclick="changepictwo()">Front Rise</label>
+<textarea title="front_rise" name="front_rise" id="front_rise" onclick="changepictwo()" cols=5 rows=1></textarea>
+<label for="back_rise" onclick="changepic()">Back Rise</label>
+<textarea title="back_rise" name="back_rise" id="back_rise" onclick="changepic()" cols=5 rows=1></textarea>
+<label for="leg_opening" onclick="changepictwo()">Leg Opening</label>
+<textarea title="leg_opening" name="leg_opening" id="leg_opening" onclick="changepictwo()" cols=5 rows=1></textarea>
+<label for="in_seam" onclick="changepic()">Inseam</label>
+<textarea title="in_seam" name="in_seam" id="in_seam" onclick="changepic()" cols=5 rows=1></textarea>
+<label for="out_seam" onclick="changepictwo()">Outseam</label>
+<textarea title="out_seam" name="out_seam" id="out_seam" onclick="changepictwo()" cols=5 rows=1></textarea>
+<input type="submit" value="Create New Pant">
+</form>
+
+
+
+
+

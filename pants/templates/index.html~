@@ -1,0 +1,10 @@
+{% if latest_pant_list %}
+    <ul>
+    {% for pant in latest_pant_list %}
+        <li><a href="/pants/{{ pant.id }}/">{{ pant.ref_id }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+

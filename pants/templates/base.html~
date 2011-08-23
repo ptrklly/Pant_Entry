@@ -1,0 +1,57 @@
+{% load static %}
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/reset.css" >
+  <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/ninesixty.css" >
+  <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/text.css" >
+  <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/style.css" >
+  <script type="text/javascript" src="{% get_static_prefix %}{% block js %}
+  {% endblock js %}"> </script>
+  <title>                                                                                                             
+    Clothesliner                                                                                    
+    </title>
+</head>
+<body>
+
+<div id="container" class="container_12">
+
+  <div id="header" class= "alpha omega grid_12">
+    <div id="title">
+      <h1><a href="http://www.clothesliner.com">Clothesliner</a></h1>
+      <h2>A search engine for pants that fit.</h2>
+      </div> <!--closes the title div-->
+    <div id="headerlinks">
+      <ul>
+        <li><a href=".\search.html">Search</a></li>
+        <li><a href=".\dynamiccatalog.html">Compare Items</a></li>
+        <li><a href=".\about.html">About</a></li>
+        <li><a href="http://www.clothesliner.tumblr.com/">Tumblr</a></li>
+        <li><a href=".\profile.html">Log in</a></li>
+        </ul>
+      </div> <!--closes the headerlinks div-->
+    <hr />
+    </div> <!--closes the header div-->
+
+
+  <div id="sidebar" class="alpha omega grid_1">
+    </div>
+  <div id="content" class="alpha omega grid_11">
+    {% block content %}
+    {% endblock content %}
+  </div>
+
+  <div id="footer" class="alpha omega grid_12">
+    <hr />
+    <div id="footerlinks">
+      <ul>
+	<li><a href=".\search.html">Search</a></li>
+	<li><a href=".\dynamiccatalog.html">Compare Items</a></li>
+	<li><a href=".\about.html">About</a></li>
+	<li><a href="http://www.clothesliner.tumblr.com/">Tumblr</a></li>
+	<li><a href=".\profile.html">Log in</a></li>
+      </ul>
+    </div> <!--closes the footerlinks div-->
+  </div> <!--closes the footer div-->
+</div> <!--closes the container div-->
+</body>
+</html>

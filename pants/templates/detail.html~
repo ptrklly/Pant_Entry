@@ -1,0 +1,33 @@
+{% load static %}
+
+<h1>{{ pant.type }} </h1>
+
+<form action="/pants/{{pant.id}}/submit/" method="post">
+{% csrf_token%}
+ <label for="back_rise">Brand</label>
+ <textarea title="pant.brand" name="brand" id="brand" cols=3 rows=1> </textarea><br />
+ <label for="back_rise">Style</label>
+ <textarea title="pant.style" name="style" id="style" cols=3 rows=1> </textarea><br />
+ 
+ <label for="waist">Waist</label>
+ <textarea title="pant.waist" name="waist" id="waist" cols=3 rows=1> </textarea><br />
+ <label for="front_rise">Front Rise</label>
+ <textarea title="pant.front_rise" name="front_rise" id="front_rise" cols=3 rows=1> </textarea><br />
+ <label for="back_rise">Back Rise</label>
+ <textarea title="pant.back_rise" name="back_rise" id="back_rise" cols=3 rows=1> </textarea><br />
+ <label for="back_rise">Leg Opening</label>
+ <textarea title="pant.leg_opening" name="leg_opening" id="leg_opening" cols=3 rows=1> </textarea><br />
+ <label for="back_rise">Inseam</label>
+ <textarea title="pant.in_seam" name="in_seam" id="in_seam" cols=3 rows=1> </textarea><br />
+ <label for="back_rise">Outseam</label>
+ <textarea title="pant.out_seam" name="out_seam" id="out_seam" cols=3 rows=1> </textarea><br />
+
+
+
+<input type="submit" value="Submit" />
+</form>
+
+<div id="more_info">more info...<div>
+-->
+
+</body>

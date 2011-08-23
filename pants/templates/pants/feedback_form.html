@@ -1,0 +1,41 @@
+<html>
+<head>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+
+var pk = 'http://placekitten.com/g/200/';
+
+function changepic()
+{
+document.getElementById("test").innerHTML= '<div id="total"><p>some text that explains the image</p><img src="'+pk+301+'" /></div>'
+}
+function changepictwo()
+{
+document.getElementById("test").innerHTML= '<img src="'+pk+302+'" />'
+}
+
+</script>
+</head>
+
+<body>
+
+
+<h1 id="test">it appears as though it does</h1>
+<form method="POST" action="">
+
+{% csrf_token %}
+<div id="subject">
+  <label for="subject" onclick="changepic()">Subject:</label>
+  <textarea title="subject" name="subject" id="subject" onclick="changepic()" cols=5 rows=1></textarea>
+</div>
+<div id="message">
+  <label for="mesage" onclick="changepictwo()">Message:</label>
+  <textarea title="form.message" name="message" id="message" onclick="changepictwo()" cols=10 rows=10></textarea>
+</div>
+
+
+<input type="submit" value="Create New Pant">
+</form>
+
+</body>

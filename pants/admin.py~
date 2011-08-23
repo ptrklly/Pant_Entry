@@ -1,0 +1,6 @@
+from pants.models import Pant, Feedback
+from django.contrib import admin
+
+
+admin.site.register(Pant)
+admin.site.register(Feedback)
