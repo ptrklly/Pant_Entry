@@ -49,6 +49,14 @@ def about(request):
 def aboutstaff(request):
     return render_to_response('aboutstaff.html')
 
+@login_required(login_url='/')
+def press(request):
+    return render_to_response('press.html')
+
+@login_required(login_url='/')
+def findus(request):
+    return render_to_response('findus.html')
+
 def submit(request, pant_id):
     p = get_object_or_404(Pant, pk=pant_id)
     p.waist = request.POST['waist']
