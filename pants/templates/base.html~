@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/ninesixty.css" >
   <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/text.css" >
   <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/style.css" >
+  <link href='http://fonts.googleapis.com/css?family=Vidaloka|Hammersmith+One|Nixie+One|Brawler|Kameron:700|Anton' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="{% get_static_prefix %}{% block js %}
   {% endblock js %}"> </script>
   <title>                                                                                                             
@@ -18,15 +19,15 @@
   <div id="header" class= "alpha omega grid_12">
     <div id="title">
       <h1><a href="http://www.clothesliner.com">Clothesliner</a></h1>
-      <h2>A search engine for pants that fit.</h2>
+      <h2>Find  pants that fit.</h2>
       </div> <!--closes the title div-->
     <div id="headerlinks">
       <ul>
-        <li><a href=".\search.html">Search</a></li>
-        <li><a href=".\dynamiccatalog.html">Compare Items</a></li>
-        <li><a href=".\about.html">About</a></li>
+        <li><a href="/search/">Search</a></li>
+        <li><a href="/dynamiccatalog/">Compare Items</a></li>
+        <li><a href="/about/">About</a></li>
         <li><a href="http://www.clothesliner.tumblr.com/">Tumblr</a></li>
-        <li><a href=".\profile.html">Log in</a></li>
+        <li><a href="/outsuccess">Logout</a></li>
         </ul>
       </div> <!--closes the headerlinks div-->
     <hr />
@@ -34,7 +35,9 @@
 
 
   <div id="sidebar" class="alpha omega grid_1">
-    </div>
+  {% block sidebar %}
+  {% endblock sidebar %}
+  </div>
   <div id="content" class="alpha omega grid_11">
     {% block content %}
     {% endblock content %}
@@ -44,11 +47,11 @@
     <hr />
     <div id="footerlinks">
       <ul>
-	<li><a href=".\search.html">Search</a></li>
-	<li><a href=".\dynamiccatalog.html">Compare Items</a></li>
-	<li><a href=".\about.html">About</a></li>
+	<li><a href="/search/">Search</a></li>
+	<li><a href="/dynamiccatalog/">Compare Items</a></li>
+	<li><a href="/about/">About</a></li>
 	<li><a href="http://www.clothesliner.tumblr.com/">Tumblr</a></li>
-	<li><a href=".\profile.html">Log in</a></li>
+	<li><a href="/">Log in</a></li>
       </ul>
     </div> <!--closes the footerlinks div-->
   </div> <!--closes the footer div-->

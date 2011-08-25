@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
 {% block sidebar %}
-<p>This is the sidebar</p>
 {% endblock sidebar %}
 
 {% block content %}
