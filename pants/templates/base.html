@@ -4,10 +4,12 @@
   <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/reset.css" >
   <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/ninesixty.css" >
   <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/text.css" >
-  <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/style.css" >
+  <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/dcmockupPK1.css" >
   <link href='http://fonts.googleapis.com/css?family=Vidaloka|Hammersmith+One|Nixie+One|Brawler|Kameron:700|Anton' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="{% get_static_prefix %}{% block js %}
   {% endblock js %}"> </script>
+  <script type="text/javascript" src="{% get_static_prefix %}{% block js2 %}
+  {% endblock js2 %}"> </script>
   <title>                                                                                                             
     Clothesliner                                                                                    
     </title>
@@ -24,7 +26,7 @@
     <div id="headerlinks">
       <ul>
         <li><a href="/search/">Search</a></li>
-        <li><a href="/dynamiccatalog/">Compare Items</a></li>
+        <li><a href="/results/">Compare Items</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href="http://www.clothesliner.tumblr.com/">Tumblr</a></li>
         <li><a href="/outsuccess">Logout</a></li>
@@ -34,21 +36,16 @@
     </div> <!--closes the header div-->
 
 
-  <div id="sidebar" class="alpha omega grid_1">
-  {% block sidebar %}
-  {% endblock sidebar %}
-  </div>
-  <div id="content" class="alpha omega grid_11">
     {% block content %}
     {% endblock content %}
-  </div>
+
 
   <div id="footer" class="alpha omega grid_12">
     <hr />
     <div id="footerlinks">
       <ul>
 	<li><a href="/search/">Search</a></li>
-	<li><a href="/dynamiccatalog/">Compare Items</a></li>
+	<li><a href="/results/">Compare Items</a></li>
 	<li><a href="/about/">About</a></li>
 	<li><a href="http://www.clothesliner.tumblr.com/">Tumblr</a></li>
 	<li><a href="/pants/create/">Enter a Pant</a></li>

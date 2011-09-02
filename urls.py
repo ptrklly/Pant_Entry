@@ -4,9 +4,9 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    (r'^accounts/', include('registration.urls')),
+    #(r'^accounts/', include('registration.urls')),
     (r'^pants/', include('pants.urls')),
-    (r'^profiles/', include('profiles.urls')),
+    #(r'^profiles/', include('profiles.urls')),
     (r'^$', 'pants.views.login_view'),
     (r'^logout', 'pants.views.logout_view'),
     (r'^outsuccess', 'pants.views.logout_action'),
@@ -17,5 +17,6 @@ urlpatterns = patterns('',
     (r'^press', 'pants.views.press'),
     (r'^findus', 'pants.views.findus'),
     (r'^success', 'pants.views.log_view'),
+    (r'^results/', include('search.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )

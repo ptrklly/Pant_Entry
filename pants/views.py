@@ -6,7 +6,6 @@ from django.template import RequestContext
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 
-
 def inquiry(request):
     return HttpResponse("Working!")
 
@@ -32,6 +31,9 @@ def log_view(request):
             return HttpResponse("You're out!")
     else: 
         return HttpResponse("None")
+@login_required
+def results(request):
+    return render_to_response('results.html')
 
 @login_required
 def search(request):

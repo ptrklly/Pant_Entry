@@ -1,0 +1,91 @@
+
+	<li><a href=".\search.html">Search</a></li>
+	<li><a href=".\dynamiccatalog.html">Compare Items</a></li>
+	<li><a href=".\about.html">About</a></li>
+	<li><a href="http://www.clothesliner.tumblr.com/">Tumblr</a></li>
+	<li><a href=".\profile.html">Log in</a></li>
+	</ul>
+      </div> <!--closes the headerlinks div-->
+    <hr />
+    </div> <!--closes the header div-->
+    
+    
+  <div id="sidebar" class="alpha omega grid_1">
+    </div>
+  
+  
+  <div id="main" class="grid_11"> 
+
+    <div id="measurementintro" class="alpha omega grid_11">
+      <h3> Enter Your Own Pant</h3>
+      <div id="measurementintrotext"
+	   <p>  Do you have a pant that's not in our database? If you have measuring tape you can measure it according to our guidelines and input it here and we'll describe all our search returns in relation to it. </p>
+	   </div>
+    
+    </div>
+  
+  <div id="inputform">
+<form method="POST" action="">
+{% csrf_token %}
+<input type="text" name="brand" id="brand" maxlength="30" size="10"  /> Brand <br />
+<input type="text" name="type" id="type" maxlength="30" size="10" /> Model <br />
+<input type="text" onFocus="display3()" name="waist" maxlength="4" size="2" /> Waist <br />
+<input type="text" onFocus="display4()" name="in_seam" maxlength="4" size="2" /> Inseam <br />
+<input type="text" onFocus="display5()" name="out_seam" maxlength="4" size="2" /> Outseam <br />
+<input type="text" onFocus="display6()" name="front_rise" maxlength="4" size="2" /> Front Rise <br />
+<input type="text" onFocus="display7()" name="back_rise" maxlength="4" size="2" /> Back Rise <br />
+<input type="text" onFocus="display8()" name="hips" maxlength="4" size="2" /> Hips <br />
+<input type="text" onFocus="display9()" name="thigh" maxlength="4" size="2"  /> Thigh <br />
+<input type="text" onFocus="display10()" name="knee" maxlength="4" size="2" /> Knee <br />
+<input type="text" onFocus="display11()" name="leg_opening" maxlength="4" size="2" /> Cuff <br />
+<input type="submit" value="Create New Pant">
+</form>
+</div>
+
+  <div id="starter" class="measurementguide omega grid_10"> 
+    <p>Dreamcatcher wayfarers trust fund, ut american apparel aesthetic helvetica PBR. Do locavore beard esse, et cillum mcsweeney's deserunt excepteur veniam dolor viral. Proident ut ad reprehenderit shoreditch. Banh mi scenester mlkshk, ethical 3 wolf moon aesthetic nisi you probably haven't heard of them do placeat. Sartorial trust fund accusamus organic, tumblr quinoa messenger bag iphone gentrify leggings american apparel high life mustache lo-fi. Helvetica veniam placeat food truck tumblr. Delectus homo synth chambray consectetur nihil ad. </p>
+    <img src="http://placekitten.com/g/201/301" alt="Fat"/>
+    </div>
+
+</div> <!--closes the main div-->
+
+
+
+
+
+
+
+
+
+ 
+<div id="footer" class="alpha omega grid_12">
+  <hr />
+  <div id="footerlinks">
+    <ul>
+      <li><a href=".\search.html">Search</a></li>
+      <li><a href=".\dynamiccatalog.html">Compare Items</a></li>
+      <li><a href=".\about.html">About</a></li>
+      <li><a href="http://www.clothesliner.tumblr.com/">Tumblr</a></li>
+      <li><a href=".\profile.html">Log in</a></li>
+      </ul>
+    </div> <!--closes the footerlinks div-->
+  </div> <!--closes the footer div-->
+</div> <!--closes the container div-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+

@@ -11,7 +11,7 @@
     <p>Enter the pant that best fits you, giving us much information as you can. We'll return pants that fit similarly and you can browse from there.
       <form name="input" action="html_form_action.asp" method="get">
 	<input type="text" name="s" id="s" size="80" value="for example: Levi's 505 Mens 34x32" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
-	<p class="button"><input type="submit" value="Search" class="button"/>
+	<p class="button"><a href="/results/"><input type="submit" value="Search" class="button"/></a>
 	  </form>
       </p>
     
@@ -27,7 +27,7 @@
       </p>
     <p>Alternatively again, you can manually enter the dimensions of your favorite pair of pants and we'll use that. The description of each pant will still be standardized so you can easily compare them.</p> 
     <p>Click below for pictures and instructions on how to measure. </p>
-    <div class="buttons"><a href=".\fitinput.html" class="button">Manual Pant Entry</a>
+    <div class="buttons"><a href="/pants/create/" class="button">Manual Pant Entry</a>
       </div> <!--closes div class buttons -->
     </div> <!--closes the maintext div-->
 

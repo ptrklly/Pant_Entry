@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block js %}
+js/jquery.js
+{% endblock js %}
+
+{% block js2 %}
+js/dcmockup3.js
+{% endblock js2 %}
+
+{% block content%}
+
+{% endblock content%}
+

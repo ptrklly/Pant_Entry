@@ -1,0 +1,44 @@
+$(document).ready(function() {
+	$("li[name='cuff8']").click(function() {
+		cuff8();
+	    });
+	$("li[name='cuff9']").click(function() {
+		cuff9();
+	    });
+	$("li[name='cuff10']").click(function() {
+		cuff10();
+	    });
+	$("li[name='waist31']").click(function() {
+		waist31();
+	    });
+	$("li[name='waist32']").click(function() {
+		waist32();
+	    });
+	$("li[name='waist33']").click(function() {
+		waist33();
+	    });
+});
+
+function cuff8() {
+    window.location.href = "/results/eight/";
+}
+
+function cuff9() {
+    window.location.href = "/results/nine/";
+}
+
+function cuff10() {
+    window.location.href = "/results/ten/";
+}
+
+function waist31() {
+    window.location.href = "/results/thirtyone/";
+}
+
+function waist32() {
+    window.location.href = "/results/thirtytwo/";
+}
+
+function waist33() {
+    window.location.href = "/results/thirtythree/";
+}

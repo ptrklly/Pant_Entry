@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block sidebar %}
+
+{% endblock sidebar %}
+
+{% block content %}
+<div id="main" class="grid_11"> 
+   <div id="searchsidebar" class="alpha omega grid_1">
+     <h3> Refine By </h3>
+     <ul>
+       <li> Price </li>
+       <li> Brand </li>
+       <li> Material </li>
+       <li> Sale </li>
+       </ul>
+     </div>
+   
+
+   <div id="refpant" class="alpha omega grid 2">
+     <div class="refpic">
+       <a target="_blank" href="http://jpusers.jetphillips.info/al/al/jm/klematis_big.htm"><img src="./images/arg_nscxrgtnutmeg4_2.jpg" alt="Klematis" width="190" height="190"></a>
+       <div id="refdesc">
+	 <p><a href="http://jpusers.jetphillips.info/al/al/jm/www.google.com">Life After Denim</a> </p>
+	 <p> Beard wes anderson leggings sustainable, marfa vice blog hoodie portland echo park 8-bit art party. 3 wolf moon artisan DIY food truck freegan, tattooed quinoa PBR seitan. Vice mcsweeney's brooklyn, letterpress mustache cardigan synth fixie single-origin coffee +1. Hoodie VHS portland marfa, iphone whatever cardigan sartorial. Gluten-free wolf synth vinyl, chambray cred marfa locavore portland freegan keffiyeh twee hoodie seitan. Fixie high life biodiesel tattooed cosby sweater, shoreditch etsy vinyl raw denim art party vegan. Organic seitan salvia gluten-free mixtape. </p>
+	 </div>
+       </div> 
+     </div>
+   
+   <div id="resultpants" class="alpha omega grid 6">
+     <div class="img">
+       <a target="_blank" href="http://jpusers.jetphillips.info/al/al/jm/klematis_big.htm"><img src="./images/10300044_romerosl1.jpg" alt="Klematis" width="150" height="150"></a>
+       <div class="desc">
+	 <p2><a href="http://jpusers.jetphillips.info/al/al/jm/www.google.com">Levi's 505</a></p2>
+	 <li>Looser at ankle</li>
+	 <li>Looser at waist</li>
+	 <li>Sits lower on the waist</li>
+	 </div>
+       </div> 
+     
+     <div class="img">
+       <a target="_blank" href="http://jpusers.jetphillips.info/al/al/jm/klematis_big.htm"><img src="./images/045110432_511skinny1.2_2.jpg" alt="Klematis" width="150" height="150"></a>
+       <div class="desc">
+	 <p2><a href="http://jpusers.jetphillips.info/al/al/jm/www.google.com">Banana Republic</a></p2>
+	 <li>More tapered through the knee</li>
+	 <li>Same waist</li>
+	 <li>Tighter crotch</li>
+	 </div>
+     </div> 
+     
+     <div class="img">
+       <a target="_blank" href="http://jpusers.jetphillips.info/al/al/jm/klematis_big.htm"><img src="./images/045110432_511skinny1.2_2.jpg" alt="Klematis" width="150" height="150"></a>
+        <div class="desc">
+	  <p2><a href="http://jpusers.jetphillips.info/al/al/jm/www.google.com">Banana Republic</a></p2>
+	  <li>More tapered through the knee</li>
+	  <li>Same waist</li>
+	  <li>Tighter crotch</li>
+	  </div>
+     </div> 
+     <div class="img">
+       <a target="_blank" href="http://jpusers.jetphillips.info/al/al/jm/klematis_big.htm"><img src="./images/a1b110217_slimchino_r1.jpg" alt="Klematis" width="150" height="150"></a>
+        <div class="desc">
+	  <p2><a href="http://jpusers.jetphillips.info/al/al/jm/www.google.com">Penny Stock</a></p2>
+	  <li>Looser at ankle</li>
+	  <li>Looser at waist</li>
+	  <li>Sits lower on the waist</li>
+	  </div>
+	</div>
+     <div class="img">
+       <a target="_blank" href="http://jpusers.jetphillips.info/al/al/jm/klematis_big.htm"><img src="./images/rvca_romerofallii_1.jpg" alt="Klematis" width="150" height="150"></a>
+        <div class="desc">
+	  <p2><a href="http://jpusers.jetphillips.info/al/al/jm/www.google.com">Old Navy</a></p2>
+	  <li>More tapered through the knee</li>
+	  <li>Same waist</li>
+	  <li>Tighter crotch</li>
+	  </div>
+     </div> 
+     <div class="img">
+       <a target="_blank" href="http://jpusers.jetphillips.info/al/al/jm/klematis_big.htm"><img src="./images/4bosicc1_standardchinoecru3.jpg" alt="Klematis" width="150" height="150"></a>
+        <div class="desc">
+	  <p2><a href="http://jpusers.jetphillips.info/al/al/jm/www.google.com">J. Crew</a></p2>
+	  <li>Looser at ankle</li>
+	  <li>Looser at waist</li>
+	  <li>Sits lower on the waist</li>
+	  </div>
+	</div> 
+     <div class="img">
+       <
+
+ 
+
+
+{% endblock content%}

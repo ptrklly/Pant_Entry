@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block js %}
+js/jquery.js
+{% endblock js %}
+
+{% block js2 %}
+js/dcmockup2.js
+{% endblock js2 %}
+
+
+
+{% block sidebar %}
+
+{% endblock sidebar %}
+
+{% block content%}
+<div id="refpant">
+<img src="/static/images/pant12.jpg"></img>
+<ul><b>Levi's</b></ul>
+<ul>505</ul>
+<p>Chambray shoreditch Austin single-origin coffee, twee banh mi next level skateboard cardigan organic readymade. Stumptown organic twee, cosby sweater PBR tofu master cleanse mcsweeney's bicycle rights beard thundercats squid wes anderson mlkshk photo booth. You probably haven't heard of them wes anderson aesthetic cosby sweater PBR vinyl.</p>
+<li name="cuff8">Ankle</li>
+<li name="waist32">Waist</li>
+</div> <!--End Refpant -->
+
+<div id="resultpants">
+<div id="item">
+<img src="/static/images/pant3.jpg"></img>
+<ul><b>Old Navy</b></ul>
+<ul>Urban Slim</ul>
+<li name="waist33">Looser waist</li>
+<li name="cuff8">Tighter ankle</li>
+<li name="thigh112">Looser thigh</li>
+<li name="rise12">Lower rise</li>
+</div>
+
+<div id="item">
+<img src="/static/images/pant4.jpg"></img>
+<ul><b>Dockers</b></ul>
+<ul>Slim Fit</ul>
+<li name="waist33">Looser waist</li>
+<li name="cuff9">Same ankle</li>
+<li name="thigh111">Same thigh</li>
+<li name="rise13">Same rise</li>
+</div>
+
+<div id="item">
+<img src="/static/images/pant5.jpg"></img>
+<ul><b>Gap</b></ul>
+<ul>Relaxed Fit</ul>
+<li name="waist33">Looser waist</li>
+<li name="cuff10">Looser ankle</li>
+<li name="thigh110">Tighter thigh</li>
+<li name="rise14">Higher rise</li>
+</div>
+
+<div id="item">
+<img src="/static/images/pant11.jpg"></img>
+<ul><b>Rogue Territory</b></ul>
+<ul>Urban Slim</ul>
+<li name="waist33">Looser waist</li>
+<li name="cuff8">Tighter ankle</li>
+<li name="thigh110">Tighter thigh</li>
+<li name="rise14">Higher rise</li>
+</div>
+
+<div id="item">
+<img src="/static/images/pant13.jpg"></img>
+<ul><b>Insight</b></ul>
+<ul>Relaxed Fit</ul>
+<li name="waist33">Looser waist</li>
+<li name="cuff9">Same ankle</li>
+<li name="thigh110">Tighter thigh</li>
+<li name="rise13">Same rise</li>
+</div>
+
+<div id="item">
+<img src="/static/images/pant13.jpg"></img>
+<ul><b>Kill City</b></ul>
+<ul>Urban Slim</ul>
+<li name="waist33">Looser waist</li>
+<li name="cuff10">Same ankle</li>
+<li name="thigh112">Looser thigh</li>
+<li name="rise14">Higher rise</li>
+</div>
+
+
+</div><!-- end div Results-->
+{% endblock content%}
+

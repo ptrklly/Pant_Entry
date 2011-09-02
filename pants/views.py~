@@ -6,17 +6,16 @@ from django.template import RequestContext
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 
-
 def inquiry(request):
     return HttpResponse("Working!")
 
 def login_view(request):
     return render_to_response('login.html', context_instance=RequestContext(request))
 
-def logout(request):
+def logout_view(request):
     return render_to_response('logout.html', context_instance=RequestContext(request))
 
-def logout_view(request):
+def logout_action(request):
     logout(request)
     return HttpResponse("Successfully logged out!")
 
@@ -32,6 +31,34 @@ def log_view(request):
             return HttpResponse("You're out!")
     else: 
         return HttpResponse("None")
+@login_required
+def results(request):
+    return render_to_response('results.html')
+
+@login_required
+def eight(request):
+    return render_to_response('eight.html')
+
+@login_required
+def nine(request):
+    return render_to_response('nine.html')
+
+@login_required
+def ten(request):
+    return render_to_response('ten.html')
+
+@login_required
+def thirtytwo(request):
+    return render_to_response('thirtytwo.html')
+
+@login_required
+def thirtythree(request):
+    return render_to_response('thirtythree.html')
+
+@login_required
+def thirtyone(request):
+    return render_to_response('thirtyone.html')
+
 
 @login_required
 def search(request):
@@ -48,6 +75,14 @@ def about(request):
 @login_required(login_url='/')
 def aboutstaff(request):
     return render_to_response('aboutstaff.html')
+
+@login_required(login_url='/')
+def press(request):
+    return render_to_response('press.html')
+
+@login_required(login_url='/')
+def findus(request):
+    return render_to_response('findus.html')
 
 def submit(request, pant_id):
     p = get_object_or_404(Pant, pk=pant_id)

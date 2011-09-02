@@ -1,6 +1,6 @@
 hr {
 width: 100%;
-background-image:url(http://static.everlane.com/distressed_topborder.png);
+
 background-color: #9C052A;
 height: 1px;
 line-height:0px;
@@ -55,7 +55,7 @@ margin-top: 30px;
 }
 
 
-#header, #footer {height: 100px; background-color:; text-align: center;}
+#header, #footer {height: 100px; background-color: ; text-align: center;}
 #header {margin-bottom: 10px; margin-top: 30px; background-color:;}
 #footer {margin-top:30px; margin-bottom:10px; clear:both; }
 
@@ -106,14 +106,14 @@ font-size: 11px;
 list-style-type: none;
 padding: 0;
 margin: 0;
-background-color:;
+background: ;
 }
 
 /*from Jack's mainpage3 search return page */
 #refpant {
 width: 199px;
 float: left;
-background-color:;
+background: ;
 }
 
 .refpic {
@@ -128,8 +128,8 @@ height: auto;}
 
 #resultpants {
 float:right;
-background-color:;
-max-width:700px;
+background: ;
+max-width:690px;
 text-align:center;
 }
 
@@ -140,7 +140,7 @@ div.img
   width: 150px;
   float: left;
   text-align: center;
-}	
+} 
 
 div.desc {
 text-align: left;
@@ -154,8 +154,8 @@ color:#666;
 }
 
 #main {
-width:100%
-background-color:;
+width: 960px;
+background: ;
 }
 
 #starter {
