@@ -18,5 +18,7 @@ urlpatterns = patterns('',
     (r'^findus', 'pants.views.findus'),
     (r'^success', 'pants.views.log_view'),
     (r'^results/', include('search.urls')),
+    (r'^backend/', include('backend.urls')),
+    (r'^shuffle/', include('shuffle.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )

@@ -23,7 +23,7 @@
 
 #searchcrumb {
 float:left;
-margin-left:272px;
+margin-left:70px;
 background-color:;
 }
 
@@ -195,6 +195,13 @@ max-width:690px;
 text-align:center;
 }
 
+
+
+.item {
+float: left;
+margin: 3px;
+}
+
 div.tile
 {
   margin: 2px;
@@ -295,7 +302,7 @@ a.button,.button input {
     -moz-border-radius: 2px;
     margin-right: 10px;
 }
-a.button:hover, .button input:hover {
+a.button:hover, li:hover,  .button input:hover {
     color: #9C052A;
     border-color: #999;
     -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2) -webkit-box-shadow:0 2px 5px rgba(0, 0, 0, 0.2);

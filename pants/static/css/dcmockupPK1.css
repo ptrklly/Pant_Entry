@@ -23,7 +23,7 @@
 
 #searchcrumb {
 float:left;
-margin-left:272px;
+margin-left:70px;
 background-color:;
 }
 
@@ -195,12 +195,19 @@ max-width:690px;
 text-align:center;
 }
 
+
+
+.item {
+float: left;
+margin: 3px;
+}
+
 div.tile
 {
   margin: 2px;
   height: auto;
   width: 150px;
-  float: left;F
+  float: left;
   text-align: center;
 }	
 

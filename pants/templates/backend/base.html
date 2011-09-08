@@ -1,0 +1,57 @@
+{% load static %}
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/reset.css" >
+  <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/ninesixty.css" >
+  <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/text.css" >
+  <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/dcmockupPK1.css" >
+  <link href='http://fonts.googleapis.com/css?family=Vidaloka|Hammersmith+One|Nixie+One|Brawler|Kameron:700|Anton' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="{% get_static_prefix %}{% block js %}
+  {% endblock js %}"> </script>
+  <script type="text/javascript" src="{% get_static_prefix %}{% block js2 %}
+  {% endblock js2 %}"> </script>
+  <title>                                                                                                             
+    Clothesliner                                                                                    
+    </title>
+</head>
+<body>
+
+<div id="container" class="container_12">
+
+  <div id="header" class= "alpha omega grid_12">
+    <div id="title">
+      <h1><a href="http://www.clothesliner.com">Clothesliner</a></h1>
+      <h2>Find  pants that fit.</h2>
+      </div> <!--closes the title div-->
+    <div id="headerlinks">
+      <ul>
+        <li><a href="/search/">Search</a></li>
+        <li><a href="/results/">Compare Items</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="http://www.clothesliner.tumblr.com/">Tumblr</a></li>
+        <li><a href="/outsuccess">Logout</a></li>
+        </ul>
+      </div> <!--closes the headerlinks div-->
+    <hr />
+    </div> <!--closes the header div-->
+
+
+    {% block content %}
+    {% endblock content %}
+
+
+  <div id="footer" class="alpha omega grid_12">
+    <hr />
+    <div id="footerlinks">
+      <ul>
+	<li><a href="/search/">Search</a></li>
+	<li><a href="/results/">Compare Items</a></li>
+	<li><a href="/about/">About</a></li>
+	<li><a href="http://www.clothesliner.tumblr.com/">Tumblr</a></li>
+	<li><a href="/pants/create/">Enter a Pant</a></li>
+      </ul>
+    </div> <!--closes the footerlinks div-->
+  </div> <!--closes the footer div-->
+</div> <!--closes the container div-->
+</body>
+</html>

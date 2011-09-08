@@ -4,8 +4,6 @@ from django.db import models
 
 from django.db import models
 
-
-
 class Pant(models.Model):
     type = models.CharField(max_length = 100, blank = True, null= True, default="None")
     ref_id = models.CharField(max_length = 100, blank=True, null=True, default="None")
@@ -38,3 +36,14 @@ class Inquiry(models.Model):
     responder = models.CharField(max_length=50, blank=True, null=True)
     def __unicode__(self):
         return self.question
+
+class Item(models.Model):
+    brand = models.CharField(max_length= 100, blank=True, null=True)
+    style = models.CharField(max_length= 300, blank=True, null=True)
+    desc = models.CharField(max_length=10000, blank=True, null=True)
+    waist = models.CharField(max_length= 300, blank=True, null=True)
+    rise = models.CharField(max_length=10000, blank=True, null=True)
+    pic = models.CharField(max_length= 300, blank=True, null=True)
+    def __unicode__(self):
+        return self.brand
+

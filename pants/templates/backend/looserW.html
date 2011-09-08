@@ -1,0 +1,38 @@
+{% extends "backend/backbase.html" %}
+
+{% block js %}
+js/jquery.js
+{% endblock js %}
+
+{% block js2 %}
+js/dcmockup3.js
+{% endblock js2 %}
+
+{% block content%}
+<div id="searchcrumb">
+<ol id="breadcrumb">
+<li><a href="/backend/">Results</a>
+  <ol>
+    <li><a href="/backend/Looser waist/">Looser waist</a>
+  </ol>
+</div><!--End Search crum-->
+
+
+<div id="resultpants">
+
+
+
+{% for pant in pant_list %}
+    <div class="item">
+    <img src="/static/images/{{ pant.pic }}" width=150>
+    <ol class="list"> {{ pant.brand }}
+    <li>{{ pant.style }}</li>
+    <li><a href="/backend/{{ pant.waist }}/"> {{ pant.waist }}</a></li>
+    <li><a href="/backend/{{ pant.rise }}"> {{ pant.rise }}</a></li>
+    </ol>
+    </div>
+{% endfor %}
+</div>
+
+{% endblock content%}
+
