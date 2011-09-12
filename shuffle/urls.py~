@@ -5,6 +5,6 @@ admin.autodiscover()
 
 urlpatterns = patterns('shuffle.views',
     (r'^$', 'shuffle'),
-    (r'^vote', 'vote'),
+    (r'shuffle/(?P<waist>)/check/', 'check'),
     url(r'^admin/', include(admin.site.urls)),
 )

@@ -1,4 +1,4 @@
-{% extends "backend/backbase.html" %}
+{% extends "backend/backA2.html" %}
 
 {% block js %}
 js/jquery.js
@@ -8,31 +8,22 @@ js/jquery.js
 js/dcmockup3.js
 {% endblock js2 %}
 
-{% block content%}
-<div id="searchcrumb">
+{% block searchcrumb %}
+<div id="searchcrumb" class="alpha omega grid_16 prefix_6">
 <ol id="breadcrumb">
-<li><a href="/backend/">Results</a>
+ <li><a href="/backend/">Results</a>
   <ol>
-    <li><a href="/backend/Same waist/">Same waist</a>
+   <li><a href="/backend/Same waist/">Same waist</a>
   </ol>
-</div><!--End Search crum-->
+</ol>
 
+</div> <!--closes searchcrumb-->
 
-<div id="resultpants">
+{% endblock searchcrumb %}
 
-
-
-{% for pant in pant_list %}
-    <div class="item">
-    <img src="/static/images/{{ pant.pic }}" width=150>
-    <ol class="list"> {{ pant.brand }}
-    <li>{{ pant.style }}</li>
-    <li><a href="/backend/{{ pant.waist }}/"> {{ pant.waist }}</a></li>
-    <li><a href="/backend/{{ pant.rise }}"> {{ pant.rise }}</a></li>
-    </ol>
-    </div>
-{% endfor %}
-</div>
-
-{% endblock content%}
-
+{% block fitbullets %}
+      <li class="fitbullet"><a href="/backend/{{ pant.waist}}/">{{pant.waist}}</a></li>
+      <li class="fitbullet"><a href="/backend/Same waist/{{ pant.rise }}/">{{pant.rise}}</a></li>
+      <li class="fitbullet"><a href="/backend/Same waist/{{ pant.cuff }}/">{{pant.cuff}}</a></li>
+      <li class="fitbullet"><a href="/backend/Same waist/{{ pant.thigh }}/">{{pant.thigh}}</a></li>
+{% endblock fitbullets%}

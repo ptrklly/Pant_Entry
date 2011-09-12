@@ -42,8 +42,18 @@ class Item(models.Model):
     style = models.CharField(max_length= 300, blank=True, null=True)
     desc = models.CharField(max_length=10000, blank=True, null=True)
     waist = models.CharField(max_length= 300, blank=True, null=True)
-    rise = models.CharField(max_length=10000, blank=True, null=True)
+    rise = models.CharField(max_length=300, blank=True, null=True)
+    cuff = models.CharField(max_length=300, blank=True, null=True)
+    thigh = models.CharField(max_length=300, blank=True, null=True)
     pic = models.CharField(max_length= 300, blank=True, null=True)
+    price = models.CharField(max_length= 300, blank=True, null=True)
+    similarity = models.CharField(max_length=5, blank= True, null=True)
+    sale = models.CharField(max_length=20, blank=True, null=True)
+    color1 = models.CharField(max_length=50, blank=True, null=True)
+    color2 = models.CharField(max_length=50, blank=True,null=True)
+    color3 = models.CharField(max_length=50, blank=True,null=True)
+    color4 = models.CharField(max_length=50, blank=True,null=True)
+
     def __unicode__(self):
         return self.brand
 

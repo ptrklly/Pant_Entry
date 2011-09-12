@@ -9,14 +9,14 @@
   
   <div id="searchoptions" class="maintext omega grid_10">
     <p>Enter the pant that best fits you, giving us much information as you can. We'll return pants that fit similarly and you can browse from there.
-      <form name="input" action="html_form_action.asp" method="get">
-	<input type="text" name="s" id="s" size="80" value="for example: Levi's 505 Mens 34x32" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
+      <form name="input" action="/backend/prototypeA/" method="get">
+	<input type="text" name="searchpant" id="s" size="80" value="for example: Levi's 505 Mens 34x32"/>
 	<p class="button"><input type="submit" value="Search" class="button"/>
 	  </form>
       </p>
     
     <p>Alternatively, you can pick from some of the more common pant brands we have in our database: 
-      <form action="SelectReferencePant">
+      <form action="/backend/">
 	<select name="pants">
 	  <option value="volvo">Gap</option>
 	  <option value="saab">J. Crew</option>
