@@ -1,4 +1,4 @@
-# Django settings for pant_entry project.
+# Django settings for Pant_Entry project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -56,7 +56,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = '/Users/jmoxon/Tutorial/pant_entry/static/'
+STATIC_ROOT = '/Users/jmoxon/Tutorial/Pant_Entry/static/'
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
@@ -100,7 +100,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'pant_entry.urls'
+ROOT_URLCONF = 'Pant_Entry.urls'
 
 TEMPLATE_DIRS = (
     'templates',
